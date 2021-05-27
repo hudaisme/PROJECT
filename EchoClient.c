@@ -35,7 +35,7 @@ int main(int argc, char **argv)
                 exit(3);
         }
 
-	printf("HELLO ECHO CLIENT!! WELCOME TO TE ECHO PROTOCOL");
+	printf("HELLO ECHO CLIENT!! WELCOME TO THE ECHO PROTOCOL");
 	printf("\n.................................................");
 	printf("\nPlease enter message: ");
 	//Read the contents of the FILE*stdin

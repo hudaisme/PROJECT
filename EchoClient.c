@@ -1,12 +1,14 @@
-#include <stdlib.h>
-#include <stdio.h>
-#include <sys/types.h>
-#include <sys/socket.h>
-#include <netinet/in.h>
-#include <string.h>
-#include <arpa/inet.h>
-#define MAXLINE 2000 /*max text line length*/
-#define PORT 3000/*port*/
+#include <stdlib.h>      // Contains declarations information
+#include <stdio.h>      // I/O function
+#include <sys/types.h>  // Defines data types
+#include <sys/socket.h> // Define the type socklen_t
+#include <netinet/in.h> // Contains definitions for the internet protocol family
+#include <string.h>     // String function
+#include <arpa/inet.h>  // Definitions for internet operations.
+#define MAXLINE 2000    // Maximum text length
+#define PORT 3000       // Server port
+
+
 
 int main(int argc, char **argv)
 {

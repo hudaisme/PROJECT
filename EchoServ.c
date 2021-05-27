@@ -7,7 +7,7 @@
 #include <unistd.h>
 #define MAXLINE 2000 /* maximum text length*/
 #define PORT 3000 /*port*/
-#define LISTENQ 10 /*maximum number of client connections */
+#define BACKLOG 10 /*maximum number of client connections */
 
 int main (int argc, char **argv)
 {
@@ -34,7 +34,7 @@ int main (int argc, char **argv)
         bind (socket_desc, (struct sockaddr *) &server, sizeof(server));
 
         //Listening....
-        listen (socket_desc, LISTENQ);
+        listen (socket_desc, BACKLOG);
 	printf("HELLO ECHO SERVER!!\n");
 	printf("%s\n","Server is running.... \nDude, I'm waiting connections from client.......");
 	printf("________________________________________________________________");

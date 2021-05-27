@@ -8,8 +8,6 @@
 #define MAXLINE 2000    // Maximum text length
 #define PORT 3000       // Server port
 
-
-
 int main(int argc, char **argv)
 {
         int sockfd;

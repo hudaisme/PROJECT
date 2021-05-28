@@ -23,7 +23,7 @@ int main(int argc, char **argv)
                 exit(2);
         }
        
-	//Creation of socket
+	//Preparing socket address
 	memset(&servaddr, 0, sizeof(servaddr));
 	servaddr.sin_family = AF_INET;
         servaddr.sin_addr.s_addr= inet_addr("192.168.56.105");

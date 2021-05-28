@@ -35,14 +35,14 @@ int main (int argc, char **argv)
 
         //Listening....
         listen (socket_desc, BACKLOG);
-	printf("~~~~~~~~~~HELLO ECHO SERVER!!~~~~~~~~~~\n");
+	printf("~~~~~~~~~~ HELLO ECHO SERVER!! ~~~~~~~~~~\n");
 	printf("%s\n","Server is running.... \nDude, I'm waiting connections from client.......");
 	printf("________________________________________________________________");
         //Infinite loop
         for ( ; ; ) {
                 clilen = sizeof(client);
                 connfd = accept (socket_desc, (struct sockaddr *) &client, &clilen);
-        	printf("\n~~~~~~~~ATTENTION~~~~~~~~ !!\n");
+        	printf("\n~~~~~~~~ ATTENTION ~~~~~~~~ !!\n");
 	        printf("%s\n","Yeay!!! Received client request...");
                 while ( (h = recv(connfd, buf, MAXLINE,0)) > 0)  {
                         printf("%s","String I received and sent it back to you: ");

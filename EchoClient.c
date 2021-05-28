@@ -35,7 +35,7 @@ int main(int argc, char **argv)
                 exit(3);
         }
 
-	printf("HELLO ECHO CLIENT!! WELCOME TO THE ECHO PROTOCOL");
+	printf("~~~~~~~~ HELLO ECHO CLIENT!! WELCOME TO THE ECHO PROTOCOL ~~~~~~~~");
 	printf("\n.................................................");
 	printf("\nPlease enter message: ");
 	//Read the contents of the FILE*stdin
@@ -46,7 +46,7 @@ int main(int argc, char **argv)
                         perror("The server unexpectedly shut down.");
                         exit(4);
                 }
-	 	printf("ATTENTION CLIENT !! \n");
+	 	printf("~~~~~~~ ATTENTION CLIENT !! ~~~~~~~ \n");
                 printf("%s", "Received from the server: ");
                 fputs(receiving, stdout);
         }
